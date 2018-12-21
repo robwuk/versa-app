@@ -1,0 +1,68 @@
+div{
+  color:black;
+  font-family: "Roboto";
+}
+
+.lightbluebutton{
+      background-color: #017EDB;
+      text-align: center;
+      color: white;
+    }
+
+    .lightbluebutton--body{
+      width:20vw;
+      height:6vh;
+      border-radius: 5px;
+      line-height: 6vh;
+    }
+
+    .lightbluebutton--callout{
+      width:22vw;
+      height:8vh;
+      border-radius: 5px;
+      line-height: 8vh;
+      margin-left: 1vw;
+    }
+
+    .billboard{
+      left:0;
+      width:100vw;
+      height:74vh;
+      background-size: cover;
+      position: relative;
+    }
+
+    .billboard--main{
+      background-image: url("Billboard_Main.jpg");
+    }
+
+    .callout{
+      width:28vw;
+      height:25vw;
+      top: 10vw;
+      background-color: hsla(360,100%,100%,.80);
+      color: black;
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-135%,-50%);
+    }
+
+    p{
+      margin: 15px;
+    }
+
+    .callout__text{
+      padding-left: 2vw;
+      padding-right: 2vw;
+      margin-top: 2vw;
+    }
+
+    .callout__text-head{
+      font-size: 200%;
+      font-weight: bold;
+    }
+
+    .callout__text-body{
+      font-size: 100%;
+      font-weight: lighter;
+    }
