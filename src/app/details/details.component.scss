@@ -1,0 +1,78 @@
+
+@mixin detailborders{
+  margin-top: 5vh;
+  padding-bottom: 5vh;
+  text-align: center;
+  height:5vh;
+  line-height: 5vh;
+  border: solid 1px #003E78;
+  color: #003E78;
+  margin-bottom: 2vh;
+
+  &:hover{cursor: pointer;}
+}
+
+@mixin active{
+  background-color: #003E78;
+  color:white;
+  outline: none;
+}
+
+@mixin lightbluebutton{
+  background-color: #017EDB;
+  text-align: center;
+  color: white;
+}
+
+.wrapper {
+  width:80vw;
+  margin-left: 10vw;
+  color:black;
+  font-family: "Roboto";
+  font-size: 100%;
+}
+
+
+.detail__dimensions{
+  @include detailborders;
+}
+
+.detail__trims{
+  @include detailborders;
+}
+
+.detail__colours{
+  @include detailborders;
+}
+
+.detail__layouts{
+  @include detailborders;
+}
+
+.detail__dimensions--active {
+  @include active;
+}
+
+.detail__layouts--active {
+  @include active;
+}
+
+.detail__colours--active {
+  @include active;
+}
+
+.detail__trims--active {
+  @include active;
+}
+
+.lightbluebutton--body{
+  @include lightbluebutton;
+  margin-top: 2vh;
+  width:20vw;
+  height:6vh;
+  border-radius: 5px;
+  line-height: 6vh;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}

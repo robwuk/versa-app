@@ -11,6 +11,8 @@ import { DimensionsComponent } from './dimensions/dimensions.component';
 import { LayoutsComponent } from './layouts/layouts.component';
 import { ColoursComponent } from './colours/colours.component';
 import { TrimsComponent } from './trims/trims.component';
+import { DetailsComponent } from './details/details.component';
+import { HighlightDirective } from './highlight.directive';
 
 
 
@@ -24,6 +26,8 @@ import { TrimsComponent } from './trims/trims.component';
     LayoutsComponent,
     ColoursComponent,
     TrimsComponent,
+    DetailsComponent,
+    HighlightDirective,
   ],
   imports: [
     BrowserModule,
