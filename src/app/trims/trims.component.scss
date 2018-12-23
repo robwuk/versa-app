@@ -1,0 +1,123 @@
+@mixin detail{
+  margin-top: 2vh;
+  width: 25vw;
+}
+
+
+.layouts__main__top{
+  width:80vw;
+  height:50vh;
+  object-position: 50% 30%;
+  object-fit: cover;
+/*  clip-path:inset(20px 200px 58px 0px);
+  background-size: 80% 50%;
+  background:url('/assets/images/Versa_Interior_1.jpg');
+  background-repeat: no-repeat;
+  position: absolute;
+  transform: translate(-50%,-50%);
+*/
+}
+
+.layouts__detail__left{
+  @include detail;
+}
+
+.layouts__detail__mid{
+  @include detail;
+}
+
+.layouts__detail__right{
+  @include detail;
+}
+
+.layouts__detail__text__left--bold{
+  @include detail;
+  font-weight: bold;
+}
+
+.layouts__detail__text__mid--bold{
+  @include detail;
+  font-weight: bold;
+}
+
+.layouts__detail__text__right--bold{
+  @include detail;
+  font-weight: bold;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border: solid 1px #A6A9AA;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #A6A9AA;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.detail__checkbox {
+  text-align:right;
+  vertical-align: top;
+}
+
+.detail__text{
+  background-color: red;
+  width:30vw;
+}
