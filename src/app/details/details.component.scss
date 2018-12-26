@@ -1,3 +1,4 @@
+@import "../../variables.scss";
 
 @mixin detailborders{
   margin-top: 5vh;
@@ -5,15 +6,15 @@
   text-align: center;
   height:5vh;
   line-height: 5vh;
-  border: solid 1px #003E78;
-  color: #003E78;
+  border: solid 1px $dark-blue;
+  color: $dark-blue;
   margin-bottom: 2vh;
 
   &:hover{cursor: pointer;}
 }
 
 @mixin active{
-  background-color: #003E78;
+  background-color: $dark-blue;
   color:white;
   outline: none;
 }

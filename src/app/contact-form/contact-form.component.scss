@@ -1,0 +1,49 @@
+@import "../../variables.scss";
+
+@mixin form__border{
+  border-radius: 5px;
+  border:none;
+  height: 4vh;
+  font-size: 80%;
+}
+
+.wrapper{
+  background-color: $light-grey;
+  padding-bottom: 12vh;
+  position: relative;
+  height: 25vh;
+}
+
+.contact__header{
+  font-size: 130%;
+}
+
+.contact__text{
+  font-size: 80%;
+}
+
+.contact{
+    padding-left: 1vw;
+    padding-right:1vw;
+    width:28vw;
+    height:20vh;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(65%,-40%);
+}
+
+.contact__form__text{
+  @include form__border;
+  background-color: $light-grey;
+  padding-left:1vw;
+  width:11vw;
+  margin-right: 0.5vw;
+}
+
+.contact__form__button{
+  @include form__border;
+  color: white;
+  background-color: $light-blue;
+}

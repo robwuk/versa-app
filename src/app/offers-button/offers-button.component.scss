@@ -1,5 +1,7 @@
+@import "../../variables.scss";
+
 @mixin lightbluebutton{
-  background-color: #017EDB;
+  background-color: $light-blue;
   text-align: center;
   color: white;
 }

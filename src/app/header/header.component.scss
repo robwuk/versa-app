@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 div{
   color:black;
   font-family: "Roboto";
@@ -36,7 +38,7 @@ div{
 }
 
 .top__contact{
-  background-color: #14A65B;
+  background-color: $green;
   color:white;
   padding-left:1vw;
 }
