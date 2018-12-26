@@ -13,6 +13,12 @@ import { ColoursComponent } from './colours/colours.component';
 import { TrimsComponent } from './trims/trims.component';
 import { DetailsComponent } from './details/details.component';
 import { HighlightDirective } from './highlight.directive';
+import { InteriorBillboardComponent } from './interior-billboard/interior-billboard.component';
+import { VersaTextComponent } from './versa-text/versa-text.component';
+import { BillboardBottomComponent } from './billboard-bottom/billboard-bottom.component';
+import { FooterComponent } from './footer/footer.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { OffersButtonComponent } from './offers-button/offers-button.component';
 
 
 
@@ -28,6 +34,12 @@ import { HighlightDirective } from './highlight.directive';
     TrimsComponent,
     DetailsComponent,
     HighlightDirective,
+    InteriorBillboardComponent,
+    VersaTextComponent,
+    BillboardBottomComponent,
+    FooterComponent,
+    ContactFormComponent,
+    OffersButtonComponent,
   ],
   imports: [
     BrowserModule,

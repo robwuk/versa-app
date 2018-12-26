@@ -1,0 +1,17 @@
+@mixin lightbluebutton{
+  background-color: #017EDB;
+  text-align: center;
+  color: white;
+}
+
+.lightbluebutton--body{
+  @include lightbluebutton;
+  margin-top: 2vh;
+  width:20vw;
+  height:6vh;
+  border-radius: 5px;
+  line-height: 6vh;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
