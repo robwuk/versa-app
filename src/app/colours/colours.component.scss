@@ -1,0 +1,61 @@
+@import "../../variables.scss";
+
+@mixin swatch__type{
+  text-align: center;
+  padding-top: 1vh;
+  border-bottom: solid 1px black;
+  padding-right: 0vw;
+  height:6vh;
+  line-height: 4vh;
+  font-size: 90%;
+}
+
+@mixin dimensions{
+  width: 60vw;
+  margin-left: 15vw;
+}
+
+.swatches{
+  @include dimensions;
+}
+
+.types{
+  @include dimensions;
+}
+
+.swatch{
+  width:4vw;
+  height:4vw;
+  margin-right: 2vw;
+  border-radius: 50%;
+  border-color: #FFFFFF;
+  border-width: thick;
+  border-style: solid;
+  -webkit-border-radius: 50%;
+  -webkit-border-color: #FFFFFF;
+  -webkit-border-width: thick;
+  -webkit-border-style: solid;
+  text-align: center;
+  line-height: 3.5vw;
+  color: #FFFFFF;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
+
+  &:hover{cursor: pointer;}
+}
+
+.colours__car{
+  width: 80vw;
+}
+
+.types__nonmetallic{
+  @include swatch__type;
+  width: 16vw;
+}
+
+.types__metallic{
+  @include swatch__type;
+  width:34vw;
+  margin-left:2vw;
+  color: $mid-grey;
+  border-color: $mid-grey;
+}

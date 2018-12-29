@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./billboard-bottom.component.scss']
 })
 export class BillboardBottomComponent implements OnInit {
+  text = "More Information";
+  width = "22vw";
+  height = "8vh";
 
   constructor() { }
 

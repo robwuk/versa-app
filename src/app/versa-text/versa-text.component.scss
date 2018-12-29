@@ -6,8 +6,8 @@
 }
 
 .wrapper--small {
-  width:80vw;
-  margin-left: 10vw;
+  width:$narrow-width;
+  margin-left: $narrow-margin-left;
   padding-top:  6vh;
   color:black;
   font-family: "Roboto";

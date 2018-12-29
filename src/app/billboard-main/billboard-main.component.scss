@@ -5,27 +5,6 @@ div{
   font-family: "Roboto";
 }
 
-.lightbluebutton{
-      background-color: $light-blue;
-      text-align: center;
-      color: white;
-    }
-
-    .lightbluebutton--body{
-      width:20vw;
-      height:6vh;
-      border-radius: 5px;
-      line-height: 6vh;
-    }
-
-    .lightbluebutton--callout{
-      width:22vw;
-      height:8vh;
-      border-radius: 5px;
-      line-height: 8vh;
-      margin-left: 1vw;
-    }
-
     .billboard{
       left:0;
       width:99vw;
@@ -36,14 +15,14 @@ div{
     }
 
     .callout{
-      width:28vw;
-      height:25vw;
-      top: 10vw;
-      background-color: hsla(360,100%,100%,.80);
-      color: black;
+      width:$callout-width;
+      height:$callout-height;
+      background-color: $callout-background-color;
+      color: $callout-color;
       position: absolute;
-      top: 50%; left: 50%;
-      transform: translate(-135%,-50%);
+      top: $callout-top;
+      left: $callout-left;
+      transform: translate($callout-x,$callout-y);
     }
 
     p{

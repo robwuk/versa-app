@@ -1,7 +1,7 @@
 @import "../../variables.scss";
 
 .wrapper{
-  background-color: #43454D;
+  background-color: $dark-grey;
   color:white;
   font-family: "Roboto";
   padding-top: 6vh;
@@ -9,7 +9,7 @@
 }
 
 .footer__left{
-  margin-left: 10vw;
+  margin-left: $narrow-margin-left;
 }
 
 .footer__left__text{
@@ -36,8 +36,8 @@
 
 .footer__bottom{
   padding-top: 3vh;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin-left: $narrow-margin-left;
+  margin-right: $narrow-margin-right;
   font-size: 70%;
   color: $mid-dark-grey;
 }

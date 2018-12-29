@@ -20,8 +20,8 @@
 }
 
 .wrapper {
-  width:80vw;
-  margin-left: 10vw;
+  width:$narrow-width;
+  margin-left: $narrow-margin-left;
   color:black;
   font-family: "Roboto";
   font-size: 100%;

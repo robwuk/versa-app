@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./billboard-main.component.scss']
 })
 export class BillboardMainComponent implements OnInit {
-
+  text = "Make An Enquiry";
+  width = "22vw";
+  height = "8vh";
   constructor() { }
 
   ngOnInit() {

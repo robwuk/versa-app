@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./details.component.scss']
 })
 export class DetailsComponent implements OnInit {
+  text = "View Our Versa Connect Offers";
+  width = "20vw";
+  height = "6vh";
+  margintop = "2vh";
 
   constructor() { }
 
