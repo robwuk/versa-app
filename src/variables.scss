@@ -1,9 +1,14 @@
-/*Site Dimensions*/
+/*Wide Site Dimensions*/
 $narrow-width: 80vw;
 $narrow-margin-left: 10vw;
 $narrow-margin-right: 10vw;
 
-/*Callout Dimensions*/
+/*Narrow Site Dimensions*/
+$narrow-width-phone: 90vw;
+$narrow-margin-left-phone: 5vw;
+$narrow-margin-right-phone: 5vw;
+
+/* Wide Callout Dimensions*/
 $callout-x: -40vw;
 $callout-y: -50%;
 $callout-width:28vw;
@@ -13,6 +18,10 @@ $callout-color: black;
 $callout-top: 50%;
 $callout-left: 50%;
 
+/* Narrow Callout Dimensions*/
+$callout-width-phone:100vw;
+$callout-height-phone:25vw;
+
 /*Site Colours*/
 $light-blue: #017EDB;
 $light-grey: #EFEFEF;
@@ -21,3 +30,6 @@ $green: #14A65B;
 $dark-grey: #43454D;
 $mid-grey: #A6A9AA;
 $mid-dark-grey: #5F625F;
+
+/*screen breaks for responsive*/
+$phone: 1000px;

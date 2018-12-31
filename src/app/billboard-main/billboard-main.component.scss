@@ -7,7 +7,7 @@ div{
 
     .billboard{
       left:0;
-      width:99vw;
+      width:100vw;
       height:74vh;
       background-size: cover;
       position: relative;
@@ -15,15 +15,37 @@ div{
     }
 
     .callout{
-      width:$callout-width;
-      height:$callout-height;
-      background-color: $callout-background-color;
-      color: $callout-color;
-      position: absolute;
-      top: $callout-top;
-      left: $callout-left;
-      transform: translate($callout-x,$callout-y);
+        display:block;
+        padding-bottom: 9vh;
+      }
+
+    @media only screen and (min-width: $phone) {
+      .callout{
+        width:$callout-width;
+        background-color: $callout-background-color;
+        color: $callout-color;
+        position: absolute;
+        top: $callout-top;
+        left: $callout-left;
+        transform: translate($callout-x,$callout-y);
+      }
     }
+
+    @media only screen and (max-width: $phone) {
+      .callout{
+        background-color: $callout-background-color;
+        color: $callout-color;
+        width:$callout-width-phone;
+        margin-left:0;
+        position: relative;
+      }
+
+      .billboard{
+        width:100vw;
+        height:50vh;
+      }
+    }
+
 
     p{
       margin: 15px;

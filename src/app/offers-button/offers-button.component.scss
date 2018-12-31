@@ -9,8 +9,21 @@
 .lightbluebutton--body{
   @include lightbluebutton;
   border-radius: 5px;
-  line-height: 6vh;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
+}
+
+@media only screen and (min-width: $phone) {
+  .lightbluebutton--body{
+    line-height: 6vh;
+  }
+}
+
+@media only screen and (max-width: $phone) {
+  .lightbluebutton--body{
+    width: 80vw !important;
+    height: 6vh !important;
+    line-height: 6vh !important;
+  }
 }
