@@ -1,6 +1,25 @@
 @import "../../variables.scss";
 
-@mixin detailborders{
+/*set up page for full width device*/
+.wrapper {
+  width:$narrow-width;
+  margin-left: $narrow-margin-left;
+  color:black;
+  font-family: "Roboto";
+  font-size: 100%;
+}
+
+/*set up page for narrow width device*/
+@media only screen and (max-width: $phone) {
+  .wrapper {
+    width:$narrow-width-phone;
+    margin-left: $narrow-margin-left-phone;
+    font-size: 2vw;
+  }
+}
+
+/*4 "buttons" to nagivate detail section*/
+.detail__dimensions, .detail__trims,.detail__colours, .detail__layouts{
   margin-top: 5vh;
   padding-bottom: 5vh;
   text-align: center;
@@ -10,52 +29,12 @@
   color: $dark-blue;
   margin-bottom: 2vh;
 
-  &:hover{cursor: pointer;}
+  &:hover{cursor: pointer;} /*change mousepointer to highlight this is clickable*/
 }
 
-@mixin active{
+/*change clicked button to dark blue*/
+.detail__dimensions--active, .detail__layouts--active, .detail__colours--active, .detail__trims--active {
   background-color: $dark-blue;
   color:white;
   outline: none;
-}
-
-.wrapper {
-  width:$narrow-width;
-  margin-left: $narrow-margin-left;
-  color:black;
-  font-family: "Roboto";
-  font-size: 100%;
-}
-
-
-.detail__dimensions{
-  @include detailborders;
-}
-
-.detail__trims{
-  @include detailborders;
-}
-
-.detail__colours{
-  @include detailborders;
-}
-
-.detail__layouts{
-  @include detailborders;
-}
-
-.detail__dimensions--active {
-  @include active;
-}
-
-.detail__layouts--active {
-  @include active;
-}
-
-.detail__colours--active {
-  @include active;
-}
-
-.detail__trims--active {
-  @include active;
 }

@@ -25,22 +25,43 @@
 .contact{
     padding-left: 1vw;
     padding-right:1vw;
-    width:28vw;
-    height:20vh;
     background-color: white;
     color: black;
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(65%,-40%);
+    height:15vh;
 }
 
 .contact__form__text{
   @include form__border;
   background-color: $light-grey;
   padding-left:1vw;
-  width:11vw;
   margin-right: 0.5vw;
 }
+
+  @media only screen and (min-width: $phone) {
+    .contact{
+        width:28vw;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(65%,-40%);
+    }
+
+    .contact__form__text{
+      width:11vw;
+    }
+  }
+
+  @media only screen and (max-width: $phone) {
+    .contact{
+        margin-left: $narrow-margin-left-phone;
+        width:$narrow-width-phone;
+    }
+
+    .contact__form__text{
+      width:40vw;
+    }
+  }
+
+
 
 .contact__form__button{
   @include form__border;

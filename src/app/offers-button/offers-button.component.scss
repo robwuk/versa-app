@@ -1,25 +1,17 @@
 @import "../../variables.scss";
 
-@mixin lightbluebutton{
+/*common parameters for the button*/
+.lightbluebutton--body{
   background-color: $light-blue;
   text-align: center;
   color: white;
-}
-
-.lightbluebutton--body{
-  @include lightbluebutton;
   border-radius: 5px;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
 }
 
-@media only screen and (min-width: $phone) {
-  .lightbluebutton--body{
-    line-height: 6vh;
-  }
-}
-
+/*override (IMPORTANT) passed values for narrow screen*/
 @media only screen and (max-width: $phone) {
   .lightbluebutton--body{
     width: 80vw !important;

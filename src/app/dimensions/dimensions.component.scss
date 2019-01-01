@@ -1,9 +1,5 @@
 @import "../../variables.scss";
 
-@mixin header{
-  font-weight: bold;
-}
-
 .data__rows{
   border:solid 2px $mid-grey;
 }
@@ -22,8 +18,16 @@ td {
   padding-top: 3vh;
 }
 
+/*correct image size for narrow screen*/
+@media only screen and (max-width: $phone) {
+  .dimensions__image--size{
+    width:$narrow-width-phone;
+    padding-top: 3vh;
+  }
+}
+
 .data__header{
-  @include header;
+  font-weight: bold;
 }
 
 .data__rows--header{

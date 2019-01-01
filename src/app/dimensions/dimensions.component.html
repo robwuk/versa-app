@@ -1,5 +1,7 @@
-<div class="dimensions" fxLayout="row" fxFill>
-  <div class="dimensions__table" fxFlex="50">
+<!--dimensions wrapper is layout=row for wide screen and layout=column for narrow screens-->
+<div class="dimensions" fxLayout.gt-sm="row" fxLayout.lt-md="column" fxFill>
+<!--dimensions table changes size between row (50% width of component) and column (100% width of component) layout format-->
+  <div class="dimensions__table" fxFlex.gt-sm="50" fxFlex.lt-md="100">
     <table class="dimensions__table__data">
       <tr class="data__header">
         <td></td>
