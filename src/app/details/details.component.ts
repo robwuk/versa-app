@@ -13,7 +13,7 @@ export class DetailsComponent implements OnInit {
   height = "6vh";
   margintop = "2vh";
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
      this.router.navigate(['/dimensions']);
