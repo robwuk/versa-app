@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Colours } from '../colours';
-import { COLOURS } from '../swatches';
+import { Colours } from './colours';
+import { COLOURS } from './swatches';
 
 @Component({
   selector: 'app-colours',

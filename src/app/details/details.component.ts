@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-details',
@@ -14,6 +16,7 @@ export class DetailsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+     this.router.navigate(['/dimensions']);
   }
 
 }
