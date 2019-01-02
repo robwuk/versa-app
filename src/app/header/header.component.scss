@@ -40,13 +40,14 @@ div{
 
 @media only screen and (max-width: $phone) {
   .header__bottom{
-    height: 3vh;
-    line-height: 3vh;
+    height: 60px;
+    line-height: 18px;
     font-size: 70%
   }
 
   .header__top{
-    height: 13vh;
+    padding-top: 1px;
+    height: 120px;
   }
 
   .header__right{
@@ -54,7 +55,7 @@ div{
   }
 
   .header__logo--size {
-    height: 10vh;
+    height: 60px;
   }
 
 }
@@ -69,7 +70,7 @@ div{
   padding-left:1vw;
   @media only screen and (max-width: $phone){
     text-align: center;
-    line-height: 3vh;
+    line-height: 20px;
     width:100vw;
   }
 }

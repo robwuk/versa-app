@@ -28,18 +28,22 @@
 }
 
 @media only screen and (max-width: $phone) {
+  .wrapper{
+    padding-top: 2vh;
+  }
+
   .footer__left{
     margin-left: $narrow-margin-left-phone;
-
   }
 
   .footer__left__text{
-  margin-left: 5vw;
-  margin-right: $narrow-margin-right-phone;
+    margin-left: 5vw;
+    margin-right: $narrow-margin-right-phone;
 
   }
 
   .footer__right{
+    padding-top: 2vh;
     padding-left: $narrow-margin-left-phone;
   }
 
