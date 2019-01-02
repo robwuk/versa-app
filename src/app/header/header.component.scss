@@ -11,7 +11,7 @@ div{
 
 .header__logo{
   height: 14vh;
-  padding-top: 1vh;
+  padding-top: 2vh;
   padding-left: 3vw;
 }
 
@@ -25,10 +25,17 @@ div{
 .header__bottom{
   height: 9vh;
   line-height: 9vh;
-  width:77vw;
-  font-size: 120%;
+
+  font-size: 100%;
+  text-align: center;
 }
 
+@media only screen and (max-width: $phone) {
+  .header__bottom{
+    height: 5vh;
+    line-height: 5vh;
+  }
+}
 .header__bottom a{
   color: black;
 }
@@ -61,11 +68,11 @@ div{
 }
 
 .boxedicon{
-  border: solid 1px #A6A9AA;
+  border: solid 1px $mid-grey;
   margin-left: 2px;
   padding-left: 3px;
   padding-right: 3px;
-  color:#003E78;
+  color:$dark-blue;
 }
 
 .contrast--high{
