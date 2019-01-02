@@ -17,6 +17,7 @@ div{
 
 .header__top{
   height:5vh;
+
   line-height: 5vh;
   text-align: center;
   font-size: 70%;
@@ -32,8 +33,17 @@ div{
 
 @media only screen and (max-width: $phone) {
   .header__bottom{
-    height: 5vh;
-    line-height: 5vh;
+    height: 4vh;
+    line-height: 4vh;
+    font-size: 70%
+  }
+
+  .header__top{
+    height: 13vh;
+  }
+
+  .header__right{
+    width:76vw;
   }
 }
 .header__bottom a{
@@ -48,6 +58,13 @@ div{
   background-color: $green;
   color:white;
   padding-left:1vw;
+  @media only screen and (max-width: $phone){
+    text-align: right;
+    padding-right: 1vw;
+    line-height: 3vh;
+    width:40vw;
+    margin-left: 36vw;
+  }
 }
 
 .top__contrast{
@@ -59,12 +76,26 @@ div{
   color: black;
 }
 
+.top__download{
+    @media only screen and (max-width: $phone){
+      text-align: right;
+      padding-right: 1vw;
+    }
+}
+
 .top__fontsize{
   text-align: right;
+  @media only screen and (max-width: $phone){
+    padding-right: 1vw;
+  }
 }
 
 .top__blog{
   text-align: center;
+  @media only screen and (max-width: $phone){
+    text-align: right;
+    padding-right: 1vw;
+  }
 }
 
 .boxedicon{
