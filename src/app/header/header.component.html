@@ -1,24 +1,24 @@
-<div class="header" fxLayout="row" fxFill>
-  <div class="header__logo" fxFlex="24">
+<div class="header" fxLayout.gt-sm="row" fxLayout.lt-md="column" fxFill>
+  <div class="header__logo" fxFlex.gt-sm="24" fxFlex.lt-md="8vh">
     <img class="header__logo--size" src="assets/images/Vertu_Logo.png">
   </div>
 
   <div class="header__right" fxLayout="column">
     <div class="header__top">
-      <div class="header" fxLayout="row" fxFill>
-        <div class="top__contrast" fxFlex="44">
+      <div class="header" fxLayout="row wrap" fxFill>
+        <div class="top__contrast" fxFlex.gt-sm="44" fxFlex.lt-md="20vw">
           Contrast&nbsp;<span class="boxedicon contrast--high">A</span> <span class="boxedicon">A</span>
         </div>
-        <div class="top__fontsize" fxFlex="12">
+        <div class="top__fontsize" fxFlex="12"  fxFlex.lt-md="20vw">
           Font Size<span class="boxedicon">A-</span><span class="boxedicon">A</span><span class="boxedicon">A+</span>
         </div>
-        <div class="top__download" fxFlex="18">
+        <div class="top__download" fxFlex="18"  fxFlex.lt-md="20vw">
           <a href="#">Download a Brochure</a>
         </div>
-        <div class="top__blog" fxFlex="4">
+        <div class="top__blog" fxFlex="4" fxFlex.lt-md="10vw">
           Blog
         </div>
-        <div class="top__contact" fxFlex="20">
+        <div class="top__contact" fxFlex="22" fxFlex.lt-md="30vw">
           <fa-icon [icon]="faPhone" flip="horizontal"></fa-icon>
           &nbsp;Contact us on 0300 042 5909&nbsp;
           <fa-icon [icon]="faInfoCircle"></fa-icon>

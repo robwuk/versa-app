@@ -3,39 +3,53 @@
 @mixin detail{
   margin-top: 2vh;
   width: 25vw;
+
+  @media only screen and (max-width: $phone) {
+    width: 29vw;
+  }
+
 }
 
-
-.layouts__main__top{
-  width:80vw;
+.trims__main__top{
   height:50vh;
   object-position: 50% 30%;
   object-fit: cover;
 }
+@media only screen and (min-width: $phone) {
+  .trims__main__top{
+    width:80vw;
+  }
 
-.layouts__detail__left{
+  .trims__main{
+    font-size: 100%;
+  }
+}
+
+@media only screen and (max-width: $phone) {
+  .trims__main__top{
+    width:90vw;
+  }
+
+  .trims__main{
+    font-size: 90%;
+  }
+}
+
+.trims__detail__left, .trims__detail__mid, .trims__detail__right{
   @include detail;
 }
 
-.layouts__detail__mid{
-  @include detail;
-}
-
-.layouts__detail__right{
-  @include detail;
-}
-
-.layouts__detail__text__left--bold{
+.trims__detail__text__left--bold{
   @include detail;
   font-weight: bold;
 }
 
-.layouts__detail__text__mid--bold{
+.trims__detail__text__mid--bold{
   @include detail;
   font-weight: bold;
 }
 
-.layouts__detail__text__right--bold{
+.trims__detail__text__right--bold{
   @include detail;
   font-weight: bold;
 }
