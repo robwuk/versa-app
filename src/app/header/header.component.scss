@@ -5,19 +5,27 @@ div{
   font-family: "Roboto";
 }
 
-.header{
+.header__logo{
+  @media only screen and (min-width: $phone) {
+    height: 14vh;
+    padding-top: 2vh;
+    padding-left: 3vw;
+  }
 
+  @media only screen and (max-width: $phone){
+    position: absolute;
+
+  }
 }
 
-.header__logo{
-  height: 14vh;
-  padding-top: 2vh;
-  padding-left: 3vw;
+.header__logo--size {
+  @media only screen and (min-width: $phone){
+    width:20vw;
+  }
 }
 
 .header__top{
   height:5vh;
-
   line-height: 5vh;
   text-align: center;
   font-size: 70%;
@@ -26,15 +34,14 @@ div{
 .header__bottom{
   height: 9vh;
   line-height: 9vh;
-
   font-size: 100%;
   text-align: center;
 }
 
 @media only screen and (max-width: $phone) {
   .header__bottom{
-    height: 4vh;
-    line-height: 4vh;
+    height: 3vh;
+    line-height: 3vh;
     font-size: 70%
   }
 
@@ -43,27 +50,27 @@ div{
   }
 
   .header__right{
-    width:76vw;
+    width:100vw;
   }
+
+  .header__logo--size {
+    height: 10vh;
+  }
+
 }
 .header__bottom a{
   color: black;
 }
 
-.header__logo--size {
-  width:20vw;
-}
 
 .top__contact{
   background-color: $green;
   color:white;
   padding-left:1vw;
   @media only screen and (max-width: $phone){
-    text-align: right;
-    padding-right: 1vw;
+    text-align: center;
     line-height: 3vh;
-    width:40vw;
-    margin-left: 36vw;
+    width:100vw;
   }
 }
 
