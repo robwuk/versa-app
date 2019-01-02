@@ -30,6 +30,7 @@
 @media only screen and (max-width: $phone) {
   .wrapper{
     padding-top: 2vh;
+    padding-bottom: 0.5vh;
   }
 
   .footer__left{
@@ -43,7 +44,7 @@
   }
 
   .footer__right{
-    padding-top: 2vh;
+    padding-top: 4vh;
     padding-left: $narrow-margin-left-phone;
   }
 
