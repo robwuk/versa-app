@@ -20,8 +20,6 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { OffersButtonComponent } from './offers-button/offers-button.component';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
