@@ -1,10 +1,9 @@
 .billboard{
   margin-top: 10vh;
-  left:0;
-  width:100vw;
+
 
 }
 
 .mockcarousel{
-  width:100vw;
+  width: calc(100vw - (100vw - 100%));
 }
