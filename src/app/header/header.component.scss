@@ -4,10 +4,12 @@ div{
   color:black;
   font-family: "Roboto";
 }
+.header{
+  width: calc(100vw - (100vw - 100%));
+}
 
 .header__logo{
   @media only screen and (min-width: $phone) {
-    height: 14vh;
     padding-top: 2vh;
     padding-left: 3vw;
   }
@@ -20,7 +22,7 @@ div{
 
 .header__logo--size {
   @media only screen and (min-width: $phone){
-    width:20vw;
+    width:18vw;
   }
 }
 
